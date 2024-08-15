@@ -1,0 +1,37 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif; /* Asegura una fuente legible */
+  }
+  
+  .background {
+    background-color: hsla(278, 62%, 76%, 1);
+    background-image: radial-gradient(
+        circle at 88% 66%,
+        hsla(236, 89%, 99%, 1) 20%,
+        transparent 72%
+      ),
+      radial-gradient(circle at 49% 38%, hsla(223, 92%, 82%, 1) 8%, transparent 83%),
+      radial-gradient(circle at 5% 29%, hsla(282, 92%, 99%, 1) 1%, transparent 88%),
+      radial-gradient(circle at 8% 82%, hsla(326, 89%, 58%, 1) 11%, transparent 84%),
+      radial-gradient(circle at 57% 70%, hsla(194, 70%, 76%, 1) 15%, transparent 88%);
+    background-blend-mode: normal, normal, normal, normal, normal;
+    min-height: 100vh; /* Asegura que el fondo cubra toda la ventana */
+    display: flex;
+    justify-content: center; /* Centra el contenido horizontalmente */
+    align-items: center; /* Centra el contenido verticalmente */
+    box-sizing: border-box; /* Asegura que el padding no afecte el tamaño total */
+  }
+  
+  /* Medios de comunicación para pantallas pequeñas */
+  @media (max-width: 600px) {
+    .login-container {
+      padding: 20px;
+    }
+  
+    input[type='text'],
+    input[type='password'],
+    button {
+      font-size: 14px;
+    }
+  }
+  
